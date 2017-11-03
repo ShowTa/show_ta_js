@@ -9,6 +9,7 @@
     "migrate:db": "coffee src/server/database/migrate.coffee"
   },
   "dependencies": {
+    "axios": "^0.17.0",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "import-directory": "^1.0.6",
