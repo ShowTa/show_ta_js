@@ -1,4 +1,4 @@
-sequelize = require '../database/db_client'
+sequelize = require '../db_client'
 Sequelize = require('sequelize')
 
 User = sequelize.define('user', {

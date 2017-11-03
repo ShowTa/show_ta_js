@@ -1,19 +1,5 @@
 # show_ta_js
 
-## Develop
-
-### Start server
-```
-npm run start
-```
-
-### Build client code
-
-```
-npm run dev:client
-```
-
-
 ## Server
 
 ### Database
