@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "coffee src/app.coffee"
+  },
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.7"
   }
 }
