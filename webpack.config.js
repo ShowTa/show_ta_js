@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
-  entry: './src/client/index.js',
+  entry: './src/client/index.coffee',
   output: {
     path: path.resolve('src/server/public/js/'),
     filename: 'bundle.js'
