@@ -10,6 +10,6 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "coffee-script": "^1.12.7"
+    "coffeescript": "^2.0.2"
   }
 }
