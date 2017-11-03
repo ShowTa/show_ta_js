@@ -7,7 +7,8 @@
         "start": "nodemon src/server/app.coffee",
         "dev-client": "webpack -w",
         "migrate:db": "coffee src/server/database/migrate.coffee",
-        "server": "coffee src/server/app.coffee"
+        "server": "coffee src/server/app.coffee",
+        "postinstall": "webpack"
     },
     "dependencies": {
         "axios": "^0.17.0",
