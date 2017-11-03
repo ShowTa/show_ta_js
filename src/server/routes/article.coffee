@@ -1,7 +1,7 @@
-express = require('express')
+express = require 'express'
 router  = express.Router()
 
 router.get '/', (req, res, next) ->
-  res.send 'top screen'
+  res.send 'article top screen'
 
 module.exports = router
