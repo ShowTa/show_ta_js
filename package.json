@@ -21,8 +21,8 @@
     "babel-preset-react": "^6.24.1",
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",
-    "coffee-script": "^1.12.7",
+    "coffeescript": "^2.0.2",
     "nodemon": "^1.12.1",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1"    
   }
 }
