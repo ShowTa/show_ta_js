@@ -7,16 +7,18 @@
     "start": "nodemon src/server/app.coffee",
     "dev:client": "webpack -w",
     "sqlite": "sqlite3 src/server/database/database.sqlite",
-    "migrate:db": "coffee src/server/database/migrate.coffee"
+    "migrate:db": "coffee src/server/database/migrate.coffee",
+    "server": "coffee src/server/app.coffee",
+    "postinstall": "webpack"
   },
   "dependencies": {
     "axios": "^0.17.0",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "import-directory": "^1.0.6",
-    "mysql2": "^1.4.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
     "require-directory": "^2.1.1",
     "sequelize": "^4.22.1",
     "sqlite3": "^3.1.13"
