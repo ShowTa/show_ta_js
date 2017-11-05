@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
+import axios from 'axios'
+
 export default class Form extends Component {
     constructor(props){
         super(props);
@@ -12,14 +14,20 @@ export default class Form extends Component {
     submitHandler(event) {
         let name = document.getElementById('name').value
         let content = document.getElementById('content').value
-        
+        axios.post('/article/create', {
+            title: $this.title,
+            content: $this.content
+          })
+          .then(function (response) {
+            console.log(response);
+        });
     }
 
     render() {
         return(
             <div>
                 <p>記事名</p>
-                <input id="name" type="text"/>
+                <input id="title" type="text"/>
                 <p>記事の内容</p>
                 <input id="content" type="text"/>
                 <button type="button" onClick={this.submitHandler}>登録する</button>
