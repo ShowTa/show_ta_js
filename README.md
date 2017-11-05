@@ -1,5 +1,11 @@
 # show_ta_js
 
+## Setup
+
+```bash
+sh misc/setup.sh
+```
+
 ## Server
 
 ### Database
