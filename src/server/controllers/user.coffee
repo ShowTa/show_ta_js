@@ -6,5 +6,4 @@ exports.all = ->
 # TODO: parameterでinsert出来るように
 exports.create = ->
   User.create
-    firstName: 'foo'
-    lastName:  'bar'
+    name: 'foo bar'
