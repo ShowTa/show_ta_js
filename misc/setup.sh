@@ -2,3 +2,5 @@
 
 tr -d '# ' < .env.example > .env
 touch src/server/database/database.sqlite
+
+npm install
