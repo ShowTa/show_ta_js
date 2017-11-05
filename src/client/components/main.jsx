@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
+import Article from './articles/articles'
+import Detail from './articles/detail'
+import Delete from './articles/delete'
+
 export default class Main extends Component
 {
     render() {
@@ -9,15 +13,17 @@ export default class Main extends Component
             <div>
               <ul>
                 <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/friends'>Friends</Link></li>
+                <li><Link to='/articles'>Articles</Link></li>
+                <li><Link to='/user'>user</Link></li>
               </ul>
 
               <hr />
               <Switch>
                 <Route exact path='/' component={Home} />
-                <Route path='/about' component={About} />
-                <Route path='/friends' component={Friends} />
+                <Route exact path='/articles' component={Article} />
+                <Route exact path='/articles/:id' component={Detail} />
+                <Route exact path='/articles/:id/delete' component={Delete} />
+                <Route exact path='/user' component={user} />
               </Switch>
             </div>
           </Router>
@@ -31,16 +37,11 @@ const Home = () => (
     <p>Welcome to ようこそ</p>
   </div>
 )
-const About = () => (
+
+const user = () => (
   <div>
-    <h2>About</h2>
-    <p>フレンズに投票するページです</p>
-  </div>
-)
-const Friends = () => (
-  <div>
-    <h2>Friends</h2>
-    <p>ここにフレンズのリストを書きます</p>
+    <h2>User</h2>
+    <p>ここにユーザーのリストを書きます</p>
   </div>
 )
 
