@@ -1,7 +1,12 @@
 express = require 'express'
 router  = express.Router()
+User = require '../controllers/user'
 
 router.get '/', (req, res, next) ->
-  res.send 'user top screen'
+  User.all().then (users) ->
+    res.send users
+
+router.post '/post', (req, res) ->
+  res.send  User.create()
 
 module.exports = router

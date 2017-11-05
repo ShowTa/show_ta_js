@@ -45,3 +45,9 @@ Reference article: http://docs.sequelizejs.com/manual/tutorial/models-definition
 ```bash
 npm run migrate:db
 ```
+
+#### setup sqlite
+
+```bash
+npm run sqlite
+```

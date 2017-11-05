@@ -1,1 +1,1 @@
-web: node src/server/app.coffee
+web: npm run server
