@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon src/server/app.coffee",
     "dev:client": "webpack -w",
+    "sqlite": "sqlite3 src/server/database/database.sqlite",
     "migrate:db": "coffee src/server/database/migrate.coffee"
   },
   "dependencies": {
