@@ -5,6 +5,8 @@ import Article from './articles/articles'
 import Detail from './articles/detail'
 import Delete from './articles/delete'
 
+import User from './users/list'
+
 export default class Main extends Component
 {
     render() {
@@ -23,7 +25,7 @@ export default class Main extends Component
                 <Route exact path='/articles' component={Article} />
                 <Route exact path='/articles/:id' component={Detail} />
                 <Route exact path='/articles/:id/delete' component={Delete} />
-                <Route exact path='/user' component={user} />
+                <Route exact path='/user' component={User} />
               </Switch>
             </div>
           </Router>
@@ -37,11 +39,3 @@ const Home = () => (
     <p>Welcome to ようこそ</p>
   </div>
 )
-
-const user = () => (
-  <div>
-    <h2>User</h2>
-    <p>ここにユーザーのリストを書きます</p>
-  </div>
-)
-
