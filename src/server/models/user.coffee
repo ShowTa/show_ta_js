@@ -2,10 +2,19 @@ sequelize = require '../database/db_client'
 Sequelize = require('sequelize')
 
 User = sequelize.define('user', {
-  firstName: {
+  name: {
     type: Sequelize.STRING
   },
-  lastName: {
+  email: {
+    type: Sequelize.STRING
+  },
+  password: {
+    type: Sequelize.STRING
+  },
+  profile: {
+    type: Sequelize.STRING
+  },
+  icon: {
     type: Sequelize.STRING
   }
 })
