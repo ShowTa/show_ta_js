@@ -1,4 +1,4 @@
-User    = require '../models/user'
+User    = require '../database/models/user'
 
 exports.all = ->
   User.findAll()

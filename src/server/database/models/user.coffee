@@ -1,8 +1,7 @@
-sequelize = require '../database/db_client'
+sequelize = require '../db_client'
 Sequelize = require 'sequelize'
 
-User = sequelize.define
-  'user'
+User = sequelize.define('user',
   name:
     type: Sequelize.STRING
   email:
@@ -13,5 +12,6 @@ User = sequelize.define
     type: Sequelize.STRING
   icon:
     type: Sequelize.STRING
+)
 
 module.exports = User
