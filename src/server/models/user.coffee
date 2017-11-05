@@ -1,22 +1,17 @@
 sequelize = require '../database/db_client'
-Sequelize = require('sequelize')
+Sequelize = require 'sequelize'
 
-User = sequelize.define('user', {
-  name: {
+User = sequelize.define
+  'user'
+  name:
     type: Sequelize.STRING
-  }
-  email: {
+  email:
     type: Sequelize.STRING
-  }
-  password: {
+  password:
     type: Sequelize.STRING
-  }
-  profile: {
+  profile:
     type: Sequelize.STRING
-  }
-  icon: {
+  icon:
     type: Sequelize.STRING
-  }
-})
 
 module.exports = User
