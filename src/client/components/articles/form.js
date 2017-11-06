@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 
 import axios from 'axios'
 
+const REQUEST_URL = 'http://localhost:3000/';
+
 export default class Form extends Component {
     constructor(props){
         super(props);
@@ -14,7 +16,7 @@ export default class Form extends Component {
     submitHandler(event) {
         let name = document.getElementById('name').value
         let content = document.getElementById('content').value
-        axios.post('/article/create', {
+        axios.post(REQUEST_URL + '/article/create', {
             title: $this.title,
             content: $this.content
           })
