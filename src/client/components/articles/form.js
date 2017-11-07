@@ -14,11 +14,11 @@ export default class Form extends Component {
     }
 
     submitHandler(event) {
-        let name = document.getElementById('title').value
+        let title = document.getElementById('title').value
         let content = document.getElementById('content').value
         axios.post(REQUEST_URL + '/article/create', {
-            title: $this.title,
-            content: $this.content
+            title: title,
+            content: content
           })
           .then(function (response) {
             console.log(response);
