@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const REQUEST_URL = 'http://localhost:3000/';
 
-export default class Form extends Component {
+export default class ArticleForm extends Component {
     constructor(props){
         super(props);
         this.state = {
