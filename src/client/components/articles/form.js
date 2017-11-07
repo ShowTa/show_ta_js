@@ -14,7 +14,7 @@ export default class Form extends Component {
     }
 
     submitHandler(event) {
-        let name = document.getElementById('name').value
+        let name = document.getElementById('title').value
         let content = document.getElementById('content').value
         axios.post(REQUEST_URL + '/article/create', {
             title: $this.title,
