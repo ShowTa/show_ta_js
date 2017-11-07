@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
-import Article from './articles/articles'
-import Detail from './articles/detail'
-import ArticleForm from './articles/form'
+import Article from './article/articles'
+import Detail from './article/detail'
+import ArticleForm from './article/form'
 
-import User from './users/list'
+import User from './user/list'
+import UserForm from './user/form'
 
 export default class Main extends Component {
     render() {
@@ -16,7 +17,8 @@ export default class Main extends Component {
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/articles'>Articles</Link></li>
                 <li><Link to='/articles/form'>ArticleForm</Link></li>
-                <li><Link to='/user'>user</Link></li>
+                <li><Link to='/user'>User</Link></li>
+                <li><Link to='/user/form'>UserForm</Link></li>
               </ul>
 
               <hr />
@@ -26,6 +28,7 @@ export default class Main extends Component {
                 <Route exact path='/articles/form' component={ArticleForm} />
                 <Route exact path='/articles/:id' component={Detail} />
                 <Route exact path='/user' component={User} />
+                <Route  exact path='/user/form' component={UserForm} />
               </Switch>
             </div>
           </Router>
