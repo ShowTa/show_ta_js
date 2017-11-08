@@ -1,8 +1,8 @@
-express = require('express')
+express = require 'express'
 app = express()
 http = require('http').Server(app)
-port = process.env.PORT ||3000
-path = require('path')
+port = process.env.PORT || 3000
+path = require 'path'
 
 # middleware
 article = require './routes/article'
