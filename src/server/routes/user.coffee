@@ -1,6 +1,6 @@
 express = require 'express'
 router  = express.Router()
-User = require '../controllers/user'
+User    = require '../controllers/user'
 
 router.get '/', (req, res, next) ->
   User.all().then (users) ->
