@@ -10,4 +10,7 @@ router.get '/', (req, res) ->
 router.post '/create', (req, res) ->
   Article.create req.body
 
+router.patch '/update', (req, res) ->
+  Article.update req.body
+
 module.exports = router
