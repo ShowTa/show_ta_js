@@ -1,5 +1,7 @@
 # show_ta_js
 
+node: 7.9.0
+
 ## Setup
 
 ```bash
