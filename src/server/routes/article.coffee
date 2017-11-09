@@ -7,6 +7,10 @@ router.get '/', (req, res) ->
   Article.all().then (article) ->
     res.send article
 
+router.get '/:id', (req, res) ->
+  Article.show(req.params).then (article) ->
+    res.send article
+
 router.post '/create', (req, res) ->
   Article.create req.body
 
