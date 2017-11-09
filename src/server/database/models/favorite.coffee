@@ -2,9 +2,9 @@ sequelize = require '../db_client'
 Sequelize = require 'sequelize'
 
 Favorite = sequelize.define('favorite',
-  fromUser:
+  userId:
     type: Sequelize.INTEGER
-  toUser:
+  articleId:
     type: Sequelize.INTEGER
 )
 
