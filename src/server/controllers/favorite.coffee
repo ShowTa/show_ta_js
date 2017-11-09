@@ -6,4 +6,5 @@ exports.create = (body) ->
     toUser:   body.toUser
 
 exports.destroy = (body) ->
-  Favorite.destroy name: body.id
+  Favorite.find(id: body.id).then (favorite) ->
+    favorite.destroy()
