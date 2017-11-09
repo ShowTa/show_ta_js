@@ -6,4 +6,7 @@ Favorite = require '../controllers/favorite'
 router.post '/', (req, res) ->
   Favorite.create req.body
 
+router.delete '/', (req, res) ->
+  Favorite.destroy req.body
+
 module.exports = router
