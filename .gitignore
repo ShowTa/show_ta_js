@@ -3,4 +3,5 @@ src/server/public/js/bundle.js
 .env
 .idea
 package-lock.json
-src/server/database/database.sqlite
+src/server/database/database.sqlit
+/public/css/build

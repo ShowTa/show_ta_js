@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', function(){
   gulp.src('./public/sass/*.scss')
     .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(gulp.dest('./public/css/'));
+    .pipe(gulp.dest('./public/build/css/'));
 });
 
 //自動監視のタスクを作成(sass-watchと名付ける)
