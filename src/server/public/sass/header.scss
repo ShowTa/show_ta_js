@@ -1,0 +1,49 @@
+ul {
+    display: flex;
+
+    li {
+        padding: 10px 20px;
+
+        a{
+            position: relative;
+            color: lightseagreen;
+            letter-spacing: 3px;
+
+            &:hover{
+                &::after {
+                    width: 36px;
+                    width: 4rem;
+                    background: #007F82;
+                }
+            }
+
+            .activeBtn{
+                a::after {
+                    width: 36px;
+                    width: 2rem;
+                    background: #007F82;
+                }
+            }
+
+            &::after {
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -9px;
+                bottom: -.5rem;
+                left: 0;
+                width: 0;
+                height: 2px;
+                margin: 0 auto;
+                background: transparent;
+                content: '';
+                transition: all .25s;
+                transform-origin: center center;
+            }
+        }
+    }
+
+    li:first-child {
+        margin-right: auto;
+    }
+}
