@@ -1,7 +1,7 @@
 /node_modules
 src/server/public/js/bundle.js
+src/server/public/css/build
 .env
 .idea
 package-lock.json
 src/server/database/database.sqlit
-/public/css/build
